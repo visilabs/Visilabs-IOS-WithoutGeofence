@@ -1,4 +1,8 @@
-# Visilabs Without Geofence
+# Visilabs
+
+[![Version](https://img.shields.io/cocoapods/v/Visilabs.svg?style=flat)](http://cocoapods.org/pods/Visilabs)
+[![License](https://img.shields.io/cocoapods/l/Visilabs.svg?style=flat)](http://cocoapods.org/pods/Visilabs)
+[![Platform](https://img.shields.io/cocoapods/p/Visilabs.svg?style=flat)](http://cocoapods.org/pods/Visilabs)
 
 ## Usage
 

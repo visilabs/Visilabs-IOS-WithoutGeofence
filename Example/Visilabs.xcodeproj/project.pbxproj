@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0ED2E57AA480F3255907AD6A /* Pods_Visilabs_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6712CC4E38220274A10BBB /* Pods_Visilabs_Tests.framework */; };
-		389651E21D654A9B0064B97F /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 389651E11D654A9B0064B97F /* Location.gpx */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -53,8 +52,6 @@
 		279EEC4F2D248E677D49A270 /* Pods-Visilabs_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visilabs_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Visilabs_Tests/Pods-Visilabs_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2D469D6657DB1137798D0294 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		385649AB1DEF71EF000CDFEE /* Visilabs_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Visilabs_Example.entitlements; sourceTree = "<group>"; };
-		389651E11D654A9B0064B97F /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
-		38AA5BC51D65D0E200DB0692 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		569B719174EBFBB6255E1C9A /* Pods_Visilabs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Visilabs_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* Visilabs_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Visilabs_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,7 +156,6 @@
 				6003F5A6195388D20070C39A /* VisilabsViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				389651E11D654A9B0064B97F /* Location.gpx */,
 			);
 			name = "Example for Visilabs";
 			path = Visilabs;
@@ -168,7 +164,6 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38AA5BC51D65D0E200DB0692 /* Location.gpx */,
 				6003F595195388D20070C39A /* Visilabs-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -292,6 +287,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -312,7 +308,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				389651E21D654A9B0064B97F /* Location.gpx in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -353,7 +348,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Visilabs_Example/Pods-Visilabs_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Visilabs_Example/Pods-Visilabs_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Visilabs/Visilabs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -362,7 +357,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Visilabs_Example/Pods-Visilabs_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Visilabs_Example/Pods-Visilabs_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7B8B5AEB8A2B9F19E3C865C7 /* [CP] Check Pods Manifest.lock */ = {
@@ -389,7 +384,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Visilabs_Tests/Pods-Visilabs_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Visilabs_Tests/Pods-Visilabs_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Visilabs/Visilabs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -398,7 +393,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Visilabs_Tests/Pods-Visilabs_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Visilabs_Tests/Pods-Visilabs_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

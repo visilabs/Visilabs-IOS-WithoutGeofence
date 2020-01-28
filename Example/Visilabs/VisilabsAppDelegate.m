@@ -56,25 +56,21 @@
     */
     
     /*
-    [Visilabs createAPI:visilabsNewOID withSiteID:visilabsNewSiteID withSegmentURL:@"http://lgr.visilabs.net" withDataSource:visilabsNewDataSource withRealTimeURL:@"http://rt.visilabs.net" withChannel:@"IOS" withRequestTimeout:30 withTargetURL:@"http://s.visilabs.net/json" withActionURL:@"http://s.visilabs.net/actjson" withGeofenceURL:@"http://s.visilabs.net/geojson" withGeofenceEnabled:YES];
+    [Visilabs createAPI:visilabsNewOID withSiteID:visilabsNewSiteID withSegmentURL:@"http://lgr.visilabs.net" withDataSource:visilabsNewDataSource withRealTimeURL:@"http://rt.visilabs.net" withChannel:@"IOS" withRequestTimeout:30 withTargetURL:@"http://s.visilabs.net/json" withActionURL:@"http://s.visilabs.net/actjson";
      */
     
-    //NSString * geofenceURL = @"https://s.visilabs.net/geojson";
     //NSString * targetURL = @"https://s.visilabs.net/json";
     //NSString * actionURL = @"https://s.visilabs.net/actjson";
     
     /*
-    NSString * geofenceURL = @"https://testappvisilabsios.ngrok.io/adservertestweb/geojson";
     NSString * targetURL = @"https://testappvisilabsios.ngrok.io/adservertestweb/json";
     NSString * actionURL = @"https://testappvisilabsios.ngrok.io/adservertestweb/actjson";
     */
     
-    NSString * geofenceURL = @"http://tests.visilabs.net/geojson";
     NSString * targetURL = @"http://tests.visilabs.net/json";
     NSString * actionURL = @"http://tests.visilabs.net/actjson";
     
-     [Visilabs createAPI:visilabsNewOID withSiteID:visilabsNewSiteID withSegmentURL:@"https://lgr.visilabs.net" withDataSource:visilabsNewDataSource withRealTimeURL:@"https://rt.visilabs.net" withChannel:@"IOS" withRequestTimeout:30 withTargetURL:targetURL withActionURL:actionURL withGeofenceURL:geofenceURL withGeofenceEnabled:YES
-    withMaxGeofenceCount: 20];
+     [Visilabs createAPI:visilabsNewOID withSiteID:visilabsNewSiteID withSegmentURL:@"https://lgr.visilabs.net" withDataSource:visilabsNewDataSource withRealTimeURL:@"https://rt.visilabs.net" withChannel:@"IOS" withRequestTimeout:30 withTargetURL:targetURL withActionURL:actionURL];
     
     
     [[Visilabs callAPI] login:@"egemen-deneme" withProperties:nil];

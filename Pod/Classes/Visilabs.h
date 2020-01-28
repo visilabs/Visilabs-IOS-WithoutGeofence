@@ -39,6 +39,7 @@ typedef NS_ENUM(NSInteger, VisilabsSDKNetworkErrorType) {
 @property (nonatomic, strong) NSString *tokenID;
 @property (nonatomic, strong) NSString *appID;
 
+
 @property (nonatomic) BOOL isOnline;
 
 @property (nonatomic,retain) NSString *userAgent;
@@ -124,6 +125,7 @@ typedef NS_ENUM(NSInteger, VisilabsSDKNetworkErrorType) {
 +(Visilabs *) createAPI : (NSString *) organizationID  withSiteID: (NSString *) siteID withSegmentURL: (NSString *) segmentURL withDataSource :(NSString *) dataSource withRealTimeURL:(NSString *)realTimeURL withChannel:(NSString *)channel withRequestTimeout:(NSInteger)seconds withRESTURL:(NSString *)RESTURL  withEncryptedDataSource:(NSString *)encryptedDataSource;
 
 + (Visilabs *) createAPI : (NSString *) organizationID  withSiteID: (NSString *) siteID withSegmentURL: (NSString *) segmentURL withDataSource :(NSString *) dataSource withRealTimeURL:(NSString *)realTimeURL withChannel:(NSString *)channel withRequestTimeout:(NSInteger)seconds withTargetURL:(NSString *)targetURL withActionURL:(NSString *)actionURL;
+
 
 + (Visilabs *) callAPI ;
 

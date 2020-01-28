@@ -19,6 +19,7 @@
 #import "VisilabsNotificationViewController.h"
 #import "UIView+VisilabsHelpers.h"
 
+
 static Visilabs * API = nil;
 
 
@@ -772,6 +773,7 @@ static VisilabsReachability *reachability;
     return request;
 }
 
+
 - (VisilabsAction*)buildAction{
     if (API == nil) {
         @throw([NSException exceptionWithName:@"Visilabs Not Ready"
@@ -782,6 +784,8 @@ static VisilabsReachability *reachability;
     action = [[VisilabsTargetRequest alloc] init];
     return action;
 }
+
+
 
 + (Visilabs *) createAPI : (NSString *) organizationID  withSiteID: (NSString *) siteID withSegmentURL: (NSString *) segmentURL withDataSource :(NSString *) dataSource withRealTimeURL:(NSString *)realTimeURL withChannel:(NSString *)channel withRequestTimeout:(NSInteger)seconds withRESTURL:(NSString *)RESTURL withEncryptedDataSource:(NSString *)encryptedDataSource
 {
@@ -873,6 +877,7 @@ static VisilabsReachability *reachability;
     self.serialQueue = dispatch_queue_create([label UTF8String], DISPATCH_QUEUE_SERIAL);
     self.actionURL = aURL;
     self.notificationResponseCached = NO;
+
     
     self.requestTimeout = seconds;
     self.organizationID = oID;
@@ -982,6 +987,7 @@ static VisilabsReachability *reachability;
     
     //TODO: buna bak niye çağırıyoruz?
     [self applicationWillEnterForeground:nil];
+
     
 }
 
